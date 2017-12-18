@@ -1,0 +1,3 @@
+[submodule "AnonymousBot/botserver"]
+	path = AnonymousBot/botserver
+	url = https://github.com/cvzi/bothelper.git
