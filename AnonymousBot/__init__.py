@@ -178,7 +178,7 @@ Hi. Nice to meet you."""
     
     @serv.textLike("/about")
     @serv.textLike("about")
-    def showHelp(self, msg):
+    def showAbout(self, msg):
         self.sendText(msg, "This bot enables you to chat anonymously with other people. It works on Telegram, Kik and Facebook Messenger. ")
 
 
