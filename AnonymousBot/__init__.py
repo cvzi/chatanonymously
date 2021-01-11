@@ -74,7 +74,7 @@ Hi. Nice to meet you."""
         # Show the welcome message
         self.sendText(msg, self.startMessageText_full)
         
-        self.sendQuestion(msg, "Please send me a username you would like", onOtherResponse=self.commandSetUsername)
+        self.sendQuestionWithReplies(msg, "Please send me a username you would like", onOtherResponse=self.commandSetUsername)
         
     
     @serv.textStartsWith("/username")
@@ -96,7 +96,7 @@ Hi. Nice to meet you."""
             if username is not None:
                 self.sendText(msg, "Your current username is %s" % username)
             else:
-                self.sendQuestion(msg, "Invalid username, try something else.", onOtherResponse=self.commandSetUsername)
+                self.sendQuestionWithReplies(msg, "Invalid username, try something else.", onOtherResponse=self.commandSetUsername)
         else:
             # Save name
             user.storeValue("username", query)

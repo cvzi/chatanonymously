@@ -4,7 +4,7 @@ import os
 from AnonymousBot import getMyBot_html
 
 def homepage():
-    return "Running", 200
+    return 'Running <a href="/chat">Chat</a>', 200
 
 
 myBot = getMyBot_html()
